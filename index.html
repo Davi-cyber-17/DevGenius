@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DevGenius | Go Straight on.</title>
+<meta name="description" content="Portfólio de Davi Graciano de Souza, desenvolvedor full-stack. Venha conhecer mais.">
+<meta name="theme-color" content="#16181c">
+<meta name="author" content="Davi Graciano de Souza">
+<meta property="og:site_name" content="DevGenius">
+<meta property="og:title" content="DevGenius | Go Straight on.">
+<meta property="og:description" content="Desenvolvimento full-stack com Java, Python e JavaScript: sites e sistemas web sob medida.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<header class="header" id="topo">
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="DevGenius - Go Straight on. - início"><img src="img/logo.webp" alt="" width="63" height="42"><span class="brand"><b>DevGenius</b><small>Go Straight on.</small></span></a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" aria-label="Principal">
+      <a href="#sobre">Sobre</a><a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a>
+      <a href="#experiencias">Experiências</a><a href="#certificados">Certificados</a><a href="#contato">Contato</a>
+      <button type="button" class="btn btn-sm" data-orc>Solicitar Serviço</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="tag">Desenvolvedor Full-Stack</p>
+      <h1>Davi Graciano <br> de Souza</h1>
+      <p class="lead">Transformando ideias em soluções digitais.</p>
+      <p class="hero-p">Sou Davi Graciano de Souza, desenvolvedor com foco em aplicações web, sistemas e soluções tecnológicas. Trabalho com Java, Python, JavaScript e outras tecnologias para transformar ideias em projetos funcionais, intuitivos e bem estruturados. Do planejamento à implementação, busco unir lógica, criatividade e atenção aos detalhes para desenvolver soluções que façam sentido para quem vai utilizá-las.<!-- EDITE: texto de apresentação --></p>
+      <div class="actions">
+        <a href="#projetos" class="btn">Ver meus projetos</a>
+        <button type="button" class="btn btn-ghost" data-orc>Solicitar Serviço</button>
+      </div>
+    </div>
+    <div class="hero-code" aria-hidden="true">
+      <div class="code-bar"><span></span><span></span><span></span></div>
+      <pre class="code-body"><code><span class="c1">public class</span> <span class="c2">Dev</span> {
+  <span class="c2">String</span> <span class="c3">nome</span> = <span class="c4">"Davi Graciano de Souza"</span>;
+  <span class="c2">String</span> <span class="c3">funcao</span> = <span class="c4">"Desenvolvedor Full-Stack"</span>;
+  <span class="c2">String</span> <span class="c3">principal</span> = <span class="c4">"Java"</span>;
+  <span class="c2">String</span>[] <span class="c3">tambem</span> = {<span class="c4">"Python"</span>, <span class="c4">"JavaScript"</span>};
+  <span class="c1">boolean</span> <span class="c3">disponivel</span> = <span class="c5">true</span>;
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="sec">
+  <div class="wrap">
+    <div class="about">
+      <div class="photo" id="photo" role="img" aria-label="Foto de Davi Graciano de Souza"></div>
+      <div>
+        <h2 data-tag="sobre">Sobre mim</h2>
+        <p>Me chamo Davi, tenho 17 anos e atuo na área da tecnologia há mais de 5 anos, porém comecei meus estudos oficialmente em 2024. Sou desenvolvedor full-stack em formação e ainda não tenho experiência profissional formal. Trabalho principalmente com Java, também com experiência em Python e JavaScript. Tenho conhecimento em IA, desde o funcionamento até como utilizá-la da forma certa. Crio sites, landing pages, sistemas web, automação e banco de dados. Atualmente estou fazendo um curso técnico de Desenvolvimento de Sistemas no SENAI e também faço um curso de Python e IA da Samsung (SIC), dentre vários outros cursos que faço em Escolas Virtuais. Em todo resultado, busco a maior excelência possível.</p>
+        <ul class="stats" id="stats"></ul>
+        <div class="actions"><a href="curriculo.pdf" download="Curriculo-Davi-Graciano-de-Souza.pdf" class="btn cv-btn" id="cv">Baixar currículo <span aria-hidden="true">↓</span></a></div>
+      </div>
+    </div>
+    <ul class="quick" id="quick"></ul>
+    <h3 class="path-h">Minha trajetória</h3>
+    <ol class="path" id="path"></ol>
+  </div>
+</section>
+
+<section id="habilidades" class="sec alt">
+  <div class="wrap"><h2 data-tag="habilidades">Habilidades</h2><p class="sub">Tecnologias e áreas em que trabalho.</p>
+  <ul class="grid skillgrid" id="skills"></ul>
+  <div id="langs-box" hidden>
+    <h3 class="path-h">Idiomas</h3>
+    <ul class="langs" id="langs"></ul>
+  </div></div>
+</section>
+
+<section id="projetos" class="sec">
+  <div class="wrap"><h2 data-tag="projetos">Projetos</h2>
+  <p class="sub">Esses são apenas alguns dos projetos que já fiz.</p>
+  <div class="filters" id="filters" role="group" aria-label="Filtrar projetos"></div>
+  <div class="grid projects" id="projects"></div></div>
+</section>
+
+<section id="experiencias" class="sec alt">
+  <div class="wrap"><h2 data-tag="experiencias">Experiências</h2>
+  <ol class="timeline" id="timeline"></ol></div>
+</section>
+
+<section id="certificados" class="sec">
+  <div class="wrap"><h2 data-tag="certificados">Certificados</h2><p class="sub">Escolha uma categoria para ver os certificados.</p>
+  <div class="filters" id="cert-filters" role="group" aria-label="Categorias de certificados"></div>
+  <p class="sub" id="cert-msg" role="status" aria-live="polite" hidden></p>
+  <div class="grid certs" id="certs"></div></div>
+</section>
+
+<section id="contato" class="sec">
+  <div class="wrap"><h2 data-tag="contato">Contato</h2>
+  <ul class="contacts" id="contacts"></ul>
+  <div class="actions"><button class="btn asst-open" id="asst-fab" type="button" aria-expanded="false" aria-controls="asst">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.500l1.500-4.600A8 8 0 1 1 21 12z"/><path d="M8.500 11.500h.01M12 11.500h.01M15.500 11.500h.01"/></svg>
+    <span>Fale com meu assistente</span>
+  </button></div></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div><strong>DevGenius</strong><br><em class="slogan">Go Straight on.</em><br>Davi Graciano de Souza · Desenvolvedor Full-Stack<p>Sempre buscando me aperfeiçoar e ter excelência nos objetivos.</p></div>
+    <nav aria-label="Links rápidos"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><button type="button" class="foot-link" data-orc>Orçamento</button></nav>
+    <ul class="socials" id="socials"></ul>
+  </div>
+  <p class="copy">© <span id="year"></span> DevGenius · Davi Graciano de Souza. Todos os direitos reservados.</p>
+</footer>
+
+<button class="totop" id="totop" aria-label="Voltar ao topo" hidden>↑</button>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-box">
+    <button class="modal-x" id="modal-x" aria-label="Fechar">×</button>
+    <h3 id="modal-title"></h3>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<div class="orc" id="orc" role="dialog" aria-modal="true" aria-labelledby="orc-title" hidden>
+  <div class="orc-box" id="orc-box" tabindex="-1">
+    <button class="modal-x" id="orc-x" type="button" aria-label="Fechar">×</button>
+    <h2 id="orc-title">Solicitar Serviço</h2>
+    <p class="sub">Veja o que eu faço, como funciona e conte o essencial do projeto.</p>
+    <nav class="orc-tabs" aria-label="Seções do orçamento">
+      <button type="button" data-go="orc-servicos">Serviços</button>
+      <button type="button" data-go="orc-processo">Como funciona</button>
+      <button type="button" data-go="orc-form">Pedir orçamento</button>
+    </nav>
+
+    <section class="orc-sec" id="orc-servicos">
+      <h3>Serviços</h3><p class="sub">Valores definidos após análise do projeto.</p>
+      <div class="grid services" id="services"></div>
+    </section>
+
+    <section class="orc-sec" id="orc-processo">
+      <h3>Como funciona</h3>
+      <ol class="steps" id="steps"></ol>
+    </section>
+
+    <section class="orc-sec" id="orc-form">
+      <h3>Pedir orçamento</h3><p class="sub">Conte o essencial do projeto e eu respondo por WhatsApp ou e-mail.</p>
+      <form id="form" novalidate>
+        <div class="row">
+          <div class="field" data-k="nome"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required><small class="err"></small></div>
+          <div class="field" data-k="contato"><label for="contato">E-mail ou WhatsApp</label><input id="contato" name="contato" autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="E-mail ou (00) 00000-0000" aria-describedby="contato-hint" required><small class="hint" id="contato-hint">Pode ser e-mail ou WhatsApp.</small><small class="err"></small></div>
+        </div>
+        <fieldset class="field" data-k="tipo"><legend>Tipo de projeto</legend><div class="pillset" id="tipos"></div><small class="err"></small></fieldset>
+        <fieldset class="field" data-k="prazo"><legend>Prazo</legend><div class="pillset" id="prazos"></div><small class="err"></small></fieldset>
+        <div class="field" data-k="descricao"><label for="descricao">Descrição do projeto</label><textarea id="descricao" name="descricao" rows="5" placeholder="Conte o que você precisa e qual problema quer resolver." required></textarea><small class="err"></small></div>
+        <div class="actions form-actions">
+          <button type="submit" class="btn" data-via="whatsapp">Enviar solicitação</button>
+          <button type="submit" class="link-btn" data-via="email">ou enviar por e-mail</button>
+        </div>
+        <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+</div>
+
+<section class="asst" id="asst" role="dialog" aria-label="Assistente virtual do Davi" tabindex="-1" hidden>
+  <header class="asst-h">
+    <span class="asst-av" aria-hidden="true">DG</span>
+    <div class="asst-t"><strong>Orion</strong><small>Assistente virtual · respostas automáticas</small></div>
+    <button class="asst-x" id="asst-x" type="button" aria-label="Fechar assistente">×</button>
+  </header>
+  <div class="asst-log" id="asst-log" role="log" aria-live="polite" aria-label="Conversa com o assistente"></div>
+  <form class="asst-form" id="asst-form" autocomplete="off">
+    <label class="sr" for="asst-in">Escreva sua pergunta</label>
+    <input id="asst-in" name="q" maxlength="200" placeholder="Escreva sua pergunta...">
+    <button class="asst-send" type="submit" aria-label="Enviar pergunta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-4 16-4-6.500L4 12z"/></svg></button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
